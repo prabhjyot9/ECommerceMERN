@@ -19,12 +19,15 @@ const AdminMenu = () => {
             Create Product
           </NavLink>
           <NavLink
+<<<<<<< HEAD
             to="/dashboard/admin/products"
             className="list-group-item list-group-item-action"
           >
             Products
           </NavLink>
           <NavLink
+=======
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
             to="/dashboard/admin/users"
             className="list-group-item list-group-item-action"
           >
@@ -36,4 +39,8 @@ const AdminMenu = () => {
   );
 };
 
+<<<<<<< HEAD
 export default AdminMenu;
+=======
+export default AdminMenu;
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

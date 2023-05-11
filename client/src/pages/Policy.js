@@ -26,4 +26,8 @@ const Policy = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Policy;
+=======
+export default Policy;
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

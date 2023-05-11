@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import Layout from "./../components/Layout/Layout";
 import { useNavigate } from "react-router-dom";
@@ -179,8 +180,24 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+=======
+import React from "react";
+import Layout from "./../components/Layout/Layout";
+import { useAuth } from "../context/auth";
+
+const HomePage = () => {
+  const [auth, setAuth] = useAuth();
+  return (
+    <Layout title={"Best offers "}>
+      <h1>HomePage</h1>
+      <pre>{JSON.stringify(auth, null, 4)}</pre>
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
     </Layout>
   );
 };
 
+<<<<<<< HEAD
 export default HomePage;
+=======
+export default HomePage;
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

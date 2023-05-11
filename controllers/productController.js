@@ -1,5 +1,8 @@
 import productModel from "../models/productModel.js";
+<<<<<<< HEAD
 import categoryModel from "../models/categoryModel.js";
+=======
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
 import fs from "fs";
 import slugify from "slugify";
 
@@ -177,6 +180,7 @@ export const updateProductController = async (req, res) => {
     });
   }
 };
+<<<<<<< HEAD
 
 // filters
 export const productFiltersController = async (req, res) => {
@@ -311,3 +315,5 @@ export const productCategoryController = async (req, res) => {
     });
   }
 };
+=======
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

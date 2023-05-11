@@ -17,7 +17,11 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       const res = await axios.post("http://localhost:8080/api/v1/auth/register", {
+=======
+      const res = await axios.post("/api/v1/auth/register", {
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
         name,
         email,
         password,
@@ -118,4 +122,8 @@ const Register = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Register;
+=======
+export default Register;
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

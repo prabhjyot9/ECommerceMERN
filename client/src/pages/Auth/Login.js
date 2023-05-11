@@ -17,7 +17,11 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       const res = await axios.post("http://localhost:8080/api/v1/auth/login", {
+=======
+      const res = await axios.post("/api/v1/auth/login", {
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
         email,
         password,
       });
@@ -87,4 +91,8 @@ const Login = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Login;
+=======
+export default Login;
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

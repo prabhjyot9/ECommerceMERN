@@ -19,4 +19,8 @@ const Orders = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Orders;
+=======
+export default Orders;
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

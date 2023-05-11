@@ -2,11 +2,17 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useAuth } from "../../context/auth";
 import toast from "react-hot-toast";
+<<<<<<< HEAD
 import SearchInput from "../Form/SearchInput";
 import useCategory from "../../hooks/useCategory";
 const Header = () => {
   const [auth, setAuth] = useAuth();
   const categories = useCategory();
+=======
+
+const Header = () => {
+  const [auth, setAuth] = useAuth();
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
   const handleLogout = () => {
     setAuth({
       ...auth,
@@ -36,12 +42,16 @@ const Header = () => {
               🛒 Ecommerce App
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+<<<<<<< HEAD
               <SearchInput />
+=======
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
               <li className="nav-item">
                 <NavLink to="/" className="nav-link ">
                   Home
                 </NavLink>
               </li>
+<<<<<<< HEAD
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
@@ -69,6 +79,13 @@ const Header = () => {
                 </ul>
               </li>
 
+=======
+              <li className="nav-item">
+                <NavLink to="/category" className="nav-link ">
+                  Category
+                </NavLink>
+              </li>
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
               {!auth?.user ? (
                 <>
                   <li className="nav-item">
@@ -90,7 +107,11 @@ const Header = () => {
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
+<<<<<<< HEAD
                       style={{ border: "none" }}
+=======
+                      aria-expanded="false"
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
                     >
                       {auth?.user?.name}
                     </NavLink>
@@ -131,4 +152,8 @@ const Header = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Header;
+=======
+export default Header;
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import Layout from "../../components/Layout/Layout";
+=======
+import Layout from "./../../components/Layout/Layout";
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -16,7 +20,11 @@ const ForgotPasssword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       const res = await axios.post("http://localhost:8080/api/v1/auth/forgot-password", {
+=======
+      const res = await axios.post("/api/v1/auth/forgot-password", {
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
         email,
         newPassword,
         answer,
@@ -82,4 +90,8 @@ const ForgotPasssword = () => {
   );
 };
 
+<<<<<<< HEAD
 export default ForgotPasssword;
+=======
+export default ForgotPasssword;
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

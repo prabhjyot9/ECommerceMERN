@@ -24,4 +24,8 @@ const UserMenu = () => {
   );
 };
 
+<<<<<<< HEAD
 export default UserMenu;
+=======
+export default UserMenu;
+>>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
