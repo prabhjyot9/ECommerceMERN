@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import Layout from "./../../components/Layout/Layout";
 import AdminMenu from "./../../components/Layout/AdminMenu";
@@ -63,13 +62,6 @@ const CreateProduct = () => {
     }
   };
 
-=======
-import React from "react";
-import Layout from "./../../components/Layout/Layout";
-import AdminMenu from "./../../components/Layout/AdminMenu";
-
-const CreateProduct = () => {
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
   return (
     <Layout title={"Dashboard - Create Product"}>
       <div className="container-fluid m-3 p-3">
@@ -79,7 +71,6 @@ const CreateProduct = () => {
           </div>
           <div className="col-md-9">
             <h1>Create Product</h1>
-<<<<<<< HEAD
             <div className="m-1 w-75">
               <Select
                 bordered={false}
@@ -179,8 +170,6 @@ const CreateProduct = () => {
                 </button>
               </div>
             </div>
-=======
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
           </div>
         </div>
       </div>
@@ -188,8 +177,4 @@ const CreateProduct = () => {
   );
 };
 
-<<<<<<< HEAD
 export default CreateProduct;
-=======
-export default CreateProduct;
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

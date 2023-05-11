@@ -15,11 +15,7 @@ const CreateCategory = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-<<<<<<< HEAD
       const { data } = await axios.post("http://localhost:8080/api/v1/category/create-category", {
-=======
-      const { data } = await axios.post("/api/v1/category/create-category", {
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
         name,
       });
       if (data?.success) {
@@ -37,15 +33,9 @@ const CreateCategory = () => {
   //get all cat
   const getAllCategory = async () => {
     try {
-<<<<<<< HEAD
       const { data } = await axios.get("http://localhost:8080/api/v1/category/get-category");
       if (data?.success) {
         setCategories(data?.category);
-=======
-      const { data } = await axios.get("/api/v1/category/get-category");
-      if (data.success) {
-        setCategories(data.category);
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
       }
     } catch (error) {
       console.log(error);
@@ -168,8 +158,4 @@ const CreateCategory = () => {
   );
 };
 
-<<<<<<< HEAD
 export default CreateCategory;
-=======
-export default CreateCategory;
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

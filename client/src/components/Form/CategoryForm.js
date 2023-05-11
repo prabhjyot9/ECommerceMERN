@@ -22,8 +22,4 @@ const CategoryForm = ({ handleSubmit, value, setValue }) => {
   );
 };
 
-<<<<<<< HEAD
 export default CategoryForm;
-=======
-export default CategoryForm;
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
