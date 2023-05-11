@@ -31,8 +31,4 @@ Layout.defaultProps = {
   author: "Techinfoyt",
 };
 
-<<<<<<< HEAD
 export default Layout;
-=======
-export default Layout;
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

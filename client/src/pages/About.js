@@ -3,11 +3,7 @@ import Layout from "./../components/Layout/Layout";
 
 const About = () => {
   return (
-<<<<<<< HEAD
     <Layout title={"About us - Ecommerce app"}>
-=======
-    <Layout title={"About us - Ecommer app"}>
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
       <div className="row contactus ">
         <div className="col-md-6 ">
           <img
@@ -31,8 +27,4 @@ const About = () => {
   );
 };
 
-<<<<<<< HEAD
 export default About;
-=======
-export default About;
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7

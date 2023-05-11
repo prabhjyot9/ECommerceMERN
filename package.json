@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "ecommerce_app",
-=======
-  "name": "Ecommerce-app-2023",
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
   "version": "1.0.0",
   "description": "ecommerce rest api",
   "main": "server.js",
@@ -15,35 +11,25 @@
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
-<<<<<<< HEAD
   "author": "Capstone24",
-=======
-  "author": "Techinfoyt",
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "braintree": "^3.15.0",
+    "braintree-web-drop-in": "^1.37.0",
     "colors": "^1.4.0",
-    "concurrently": "^7.6.0",
+    "concurrently": "^8.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-formidable": "^1.2.0",
-<<<<<<< HEAD
     "http-proxy-middleware": "^2.0.6",
-=======
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^6.8.4",
+    "moment": "^2.29.4",
+    "mongoose": "^7.1.0",
     "morgan": "^1.10.0",
-<<<<<<< HEAD
     "nodemon": "^2.0.22",
     "react-icons": "^4.8.0",
     "slugify": "^1.6.6"
-=======
-    "nodemon": "^2.0.20",
-    "react-icons": "^4.7.1",
-    "slugify": "^1.6.5"
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
   }
 }

@@ -1,12 +1,14 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import Layout from "./../components/Layout/Layout";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Checkbox, Radio } from "antd";
 import { Prices } from "../components/Prices";
+import { useCart } from "../context/cart";
+import toast from "react-hot-toast";
 const HomePage = () => {
   const navigate = useNavigate();
+  const [cart, setCart] = useCart();
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [checked, setChecked] = useState([]);
@@ -151,14 +153,24 @@ const HomePage = () => {
                   <p className="card-text">
                     {p.description.substring(0, 30)}...
                   </p>
-                  <p className="card-text"> $ {p.price}</p>
+                  <p className="card-text"> Rs. {p.price}</p>
                   <button
                     className="btn btn-primary ms-1"
                     onClick={() => navigate(`/product/${p.slug}`)}
                   >
                     More Details
                   </button>
-                  <button className="btn btn-secondary ms-1">
+                  <button
+                    className="btn btn-secondary ms-1"
+                    onClick={() => {
+                      setCart([...cart, p]);
+                      localStorage.setItem(
+                        "cart",
+                        JSON.stringify([...cart, p])
+                      );
+                      toast.success("Item Added to cart");
+                    }}
+                  >
                     ADD TO CART
                   </button>
                 </div>
@@ -180,24 +192,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-=======
-import React from "react";
-import Layout from "./../components/Layout/Layout";
-import { useAuth } from "../context/auth";
-
-const HomePage = () => {
-  const [auth, setAuth] = useAuth();
-  return (
-    <Layout title={"Best offers "}>
-      <h1>HomePage</h1>
-      <pre>{JSON.stringify(auth, null, 4)}</pre>
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
     </Layout>
   );
 };
 
-<<<<<<< HEAD
 export default HomePage;
-=======
-export default HomePage;
->>>>>>> a4793c23298a417d0d1f2aaf0a0245a2347ab8c7
