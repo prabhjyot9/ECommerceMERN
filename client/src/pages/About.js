@@ -14,12 +14,11 @@ const About = () => {
         </div>
         <div className="col-md-4">
           <p className="text-justify mt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            officiis obcaecati esse tempore unde ratione, eveniet mollitia,
-            perferendis eius temporibus dicta blanditiis doloremque explicabo
-            quasi sunt vero optio cum aperiam vel consectetur! Laborum enim
-            accusantium atque, excepturi sapiente amet! Tenetur ducimus aut
-            commodi illum quidem neque tempora nam.
+            Welcome to our online electronics store, where you'll find an
+            impressive selection of high-quality gadgets,
+            electronics, and accessories at affordable prices.
+            Our mission is to provide you with a seamless shopping experience,
+            from the moment you browse our site to the day your order arrives at your doorstep.
           </p>
         </div>
       </div>
