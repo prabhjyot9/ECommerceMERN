@@ -4,6 +4,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import "../../styles/AuthStyles.css";
+import { FcGoogle } from "react-icons/fc";
+
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -111,6 +113,11 @@ const Register = () => {
           </div>
           <button type="submit" className="btn btn-primary">
             REGISTER
+          </button>
+          <br />
+          <br />
+          <button type="" className="btn btn-primary">
+            REGISTER WITH <FcGoogle />
           </button>
         </form>
       </div>
