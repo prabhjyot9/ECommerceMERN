@@ -14,7 +14,7 @@ export const registerController = async (req, res) => {
     if (!email) {
       return res.send({ message: "Email is Required" });
     }
-    
+    //check strength also
     if (!password && password.length >= 6 && password.toLowerCase() !== password) {
       return res.send({ message: "Password is Required" });
     }
