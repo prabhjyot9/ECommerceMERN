@@ -5,6 +5,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
 import "../../styles/AuthStyles.css";
 import { useAuth } from "../../context/auth";
+import { FcGoogle } from "react-icons/fc";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -39,7 +41,7 @@ const Login = () => {
     }
   };
   return (
-    <Layout title="Register - Ecommer App">
+    <Layout title="Login - Ecommerce App">
       <div className="form-container ">
         <form onSubmit={handleSubmit}>
           <h4 className="title">LOGIN FORM</h4>
@@ -80,6 +82,11 @@ const Login = () => {
 
           <button type="submit" className="btn btn-primary">
             LOGIN
+          </button>
+          <br />
+          <br />
+          <button type="" className="btn btn-primary">
+            LOGIN WITH <FcGoogle />
           </button>
         </form>
       </div>
